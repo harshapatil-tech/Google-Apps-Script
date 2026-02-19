@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Dear Team,</p>
+    <p>Here is the audit report for the candidate: <?= employeeName ?></p>
+    <p>Audit Scheduled on: <?= auditDate ?></p>
+    <table border="1" cellpadding="5" cellspacing="0" style="text-align: left; width: 80%;">
+      <tr>
+        <th colspan="3">Infrastructure Audit Report</th>
+      </tr>
+      <tr><td><strong>Device</strong></td><td><?= hardwareSpecificationLaptopModelNoMake ?></td></tr>
+      <tr><td><strong>Processor</strong></td><td><?= processor ?></td></tr>
+      <tr><td><strong>RAM (GB)</strong></td><td><?= ram ?></td></tr>
+      <tr><td><strong>Operating System</strong></td><td><?= softwareSpecification ?></td></tr>
+      <tr><td><strong>Device Power Backup (In Min)</strong></td><td><?= powerBackupforLaptop ?></td></tr>
+      <tr><td><strong>Antivirus Installed</strong></td><td><?= antivirusInstalledornot ?></td></tr>
+      <tr><td><strong>Power Backup</strong></td><td><?= powerBackupInverterorUPSStatus ?></td></tr>
+      <tr><td><strong>Power Backup Time (In Min)</strong></td><td><?= powerBackupTime ?></td></tr>
+      <tr><td><strong>Mode of Internet</strong></td><td><?= modeofInternet ?></td></tr>
+      <tr><td><strong>Internet Connectivity Speed (Download & Upload in Mbps)</strong></td><td><?= internetConnectivitySpeed ?></td></tr>
+      <tr><td><strong>Alternate Arrangement of Network</strong></td><td><?= alternetArrangementincaseofnetworkFailuare ?></td></tr>
+      <tr><td><strong>Alternate Arrangement of System</strong></td><td><?= alternetArrangementincaseofsystemFailuare ?></td></tr>
+      <tr><td><strong>Recommendation</strong></td><td><?= recommendation ?></td></tr>
+      <tr><td><strong>Audit Status</strong></td><td><?= wFHAuditStatus ?></td></tr>
+      <tr><td><strong>Remark</strong></td><td><?= remark ?></td></tr>
+     
+     
+    </table>
+    <p>Best regards,</p>
+    <p>UpThink IT Team</p>
+  </body>
+</html>

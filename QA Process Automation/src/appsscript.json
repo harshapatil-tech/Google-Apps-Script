@@ -1,0 +1,19 @@
+{
+  "timeZone": "Asia/Kolkata",
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "CentralLibrary",
+        "libraryId": "1G39gDKYMwaFS71W5fjArd8XDP0gz5Ss9UxeeQAkpUBbEu7Zi54ueHC_l",
+        "version": "0",
+        "developmentMode": true
+      }
+    ]
+  },
+  "webapp": {
+    "executeAs": "USER_DEPLOYING",
+    "access": "DOMAIN"
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8"
+}

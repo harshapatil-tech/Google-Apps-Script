@@ -1,0 +1,13 @@
+// Copy of Employee Details sheet
+const EMPLOYEE_DETAIL_SHEET_ID = "1jgxNQnJNuVJp9hKdGEomNAOkf8tvhD2ma64HsUUfXD8";
+
+//Copy of QA Master DB
+const MASTER_DB_SPREADSHEET_ID = "1u4i5rMCWM0mSgDWdf6EmGVi40kb9i2Qx51SE1cupIjU";
+
+//Copy of QA Review Template sheet
+const REVIEW_TEMPLATE_SHEET_ID="17t_fKuXAkXtoVnB4FmCRDIHyJzdiAzIYGbQR0eEdeQM";//1G8sNkEuQvY2v2fWCsqJfLb5CLiUGTGk-zrMrJUWWZhA";
+
+const EMPLOYEE_TAB_ID = 1550264425;
+const SME_DB_TAB_ID = 1777024406;
+const QA_DB_TAB_ID = 1767474205;
+const BACKEND_TAB_ID = 1219858524;

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <form id="multipleChoiceForm">
+      <p>Select your options:</p>
+      
+      <label>
+        <input type="checkbox" name="choice" value="Screen" /> Screen
+      </label><br>
+      
+      <label>
+        <input type="checkbox" name="choice" value="System Fan" /> System Fan
+      </label><br>
+      
+      <label>
+        <input type="checkbox" name="choice" value="Battery" /> Battery
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="choice" value="Adapter" /> Adapter
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="choice" value="Keyboard & Touch Pad" /> Keyboard & Touch Pad
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="choice" value="System Camera" /> System Camera
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="choice" value="Systems Mic (For Audio)" /> Systems Mic (For Audio)
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="choice" value="Laptop does not start" /> Laptop does not start
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="choice" value="Physical Damage" /> Physical Damage
+      </label><br>
+    
+      <label>
+        <input type="checkbox" name="choice" value="Brainfuse Quick Connect" /> Brainfuse Quick Connect
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="choice" value="Teramind" /> Teramind
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="choice" value="Microsoft Office" /> Microsoft Office
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="choice" value="Antivirus" /> Antivirus
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="choice" value="Operating Systems" /> Operating Systems
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="choice" value="Search Engine" /> Search Engine
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="choice" value="Multiple Issues" /> Multiple Issues
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="choice" value="Other Issues" /> Other Issues
+      </label><br>
+
+      <br>
+      <input type="button" value="Submit" onclick="submitChoices()" />
+    </form>
+
+    <!-- Inject targetCell and sheetName values from Code.gs -->
+    <script>
+      var targetCell = "<?= targetCell ?>";
+      var sheetName = "<?= sheetName ?>";
+
+      /**
+       * Function to gather selected choices and submit them
+       */
+      function submitChoices() {
+        let choices = [];
+        let checkboxes = document.querySelectorAll('input[name="choice"]:checked');
+        
+        // Loop through selected checkboxes and store their values
+        checkboxes.forEach(cb => {
+          choices.push(cb.value);
+        });
+        // Call the Google Apps Script function to process form data
+        google.script.run
+          .withSuccessHandler(function(){
+            // Close the dialog once successfully written to the sheet
+            google.script.host.close();
+          })
+          .processForm(choices, targetCell, sheetName);
+      }
+    </script>
+  </body>
+</html>

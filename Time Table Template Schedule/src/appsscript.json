@@ -1,0 +1,28 @@
+{
+  "timeZone": "Asia/Kolkata",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Drive",
+        "version": "v3",
+        "serviceId": "drive"
+      }
+    ],
+    "libraries": [
+      {
+        "userSymbol": "CentralLibrary",
+        "version": "0",
+        "libraryId": "1G39gDKYMwaFS71W5fjArd8XDP0gz5Ss9UxeeQAkpUBbEu7Zi54ueHC_l",
+        "developmentMode": true
+      },
+      {
+        "userSymbol": "ErrorLogger",
+        "version": "0",
+        "libraryId": "15wSLGg7EBGi8OXKuWp0EHBbp27GtYMAVrsUArSS27xWovMeS_PFWLAEf",
+        "developmentMode": true
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8"
+}

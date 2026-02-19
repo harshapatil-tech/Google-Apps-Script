@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <p>
+      Hi <?= name ?>,
+    </p>
+    <div>
+      <p>
+        The following candidates from your department have not filled the 'Employee Undertaking - BYOD Policy':
+      </p>
+      <p>
+        <ol>
+          <?=
+            employeeNames.forEach(function(employeeName, index) {
+              ?>
+              <li><?= employeeName ?></li>
+              <?
+            });
+          ?>
+        </ol>
+      </p>
+      <p>
+        Please follow up with the above mentioned employees.
+      </p>
+      <p>
+        Thanking you,
+      </p>
+      <p>
+        Team HR.
+      </p>
+    </div>
+  </body>
+</html>
